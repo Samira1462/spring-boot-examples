@@ -1,0 +1,22 @@
+FROM eclipse-temurin:25-jdk-alpine
+LABEL authors="samira"
+
+ARG JAR_PATH=./target
+ARG JAR_NAME=messaging-apache-kafka
+ARG JAR_VERSION=0.0.1-SNAPSHOT
+ARG TARGET_PATH=/app
+
+RUN apk --no-cache add ca-certificates wget curl
+
+ENV APPLICATION=${TARGET_PATH}/application.jar
+ENV APP_HOST=0.0.0.0
+ENV APP_PORT=8080
+ENV APP_PROFILES=kafka
+ENV KAFKA_GROUP_ID=main-group
+ENV KAFKA_URL=kafka:9094
+ENV KAFKA_TOPIC_NAME=main-topic
+
+ADD ${JAR_PATH}/${JAR_NAME}-${JAR_VERSION}.jar ${TARGET_PATH}/application.jar
+
+EXPOSE ${APP_PORT}
+ENTRYPOINT java -jar ${APPLICATION}

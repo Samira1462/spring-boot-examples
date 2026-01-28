@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.tutorial.messaging-apache-kafka' is invalid and this project uses 'com.tutorial.messaging_apache_kafka' instead.
+* The original package name 'com.tutorial.messaging-apache-kafka' is invalid and this project uses 'com.tutorial.messagingapachekafka' instead.
 
 # Getting Started
 
@@ -13,7 +13,7 @@ For further reference, please consider the following sections:
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/4.0.1/reference/actuator/index.html)
 * [Spring Boot DevTools](https://docs.spring.io/spring-boot/4.0.1/reference/using/devtools.html)
 * Docker
-* Java 25
+* Java 21
 * Maven 3.8.4
 
 ### Build

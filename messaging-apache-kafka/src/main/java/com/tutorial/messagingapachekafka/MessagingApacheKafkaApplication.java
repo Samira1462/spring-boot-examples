@@ -1,4 +1,4 @@
-package com.tutorial.messaging_apache_kafka;
+package com.tutorial.messagingapachekafka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

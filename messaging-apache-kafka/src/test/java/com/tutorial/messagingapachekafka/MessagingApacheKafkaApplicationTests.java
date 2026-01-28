@@ -1,4 +1,4 @@
-package com.tutorial.messaging_apache_kafka;
+package com.tutorial.messagingapachekafka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
